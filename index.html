@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoAlimenta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "eco-verde": "#4A7c38",
+              "eco-escuro": "#2b3d26",
+              "eco-laranja": "#E88D3E",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="flex justify-between items-center bg-white p-4 shadow-md">
+      <div>
+        <span>EcoAlimenta</span>
+      </div>
+
+      <nav>
+        <ul class="hidden md:flex gap-8 font-medium text-sm">
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button>Carrinho</button>
+    </header>
+
+    <main>
+      <section id="banner" class="relative h-[85vh] w-full flex items-center">
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1515694590185-73647ba02c10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="relative z-20 container mx-auto px-6 md:px-12 text-white max-w-4xl"
+        >
+          <h1>
+            Legumes Frescos da <br />
+            Comunidade <br />
+            EcoAlimenta
+          </h1>
+          <p>
+            Alimentos saudáveis cultivados com tradição, cuidado e
+            responsabilidade social.
+          </p>
+          <button
+            class="bg-eco-laranja text-white font-bold py-2 px-4 rounded-lg"
+          >
+            Ver Produtos
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
